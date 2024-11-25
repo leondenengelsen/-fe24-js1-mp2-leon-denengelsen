@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig, dice-game Leon den Engelsen</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <h1>Pig, a dice game!</h1>
+    <p>Welcome to PIG, a dice game! The goal is simple: reach the target score (100) in as little turns as possible. On your turn, roll the die as many times as you like to build up points but be careful! If you roll a one, you 
+        lose all the points you’ve earned that turn.</p>
+
+        <form id="nameForm">
+            <label for="nameInput">Enter your name:</label>
+            <br>
+            <input id="nameInput" type="text" required>
+            <button id="submitButton">submit name</button>
+        </form>
+
+            
+    <div id="gameContainer">
+        <h2>Now let's roll the dice ...</h2>
+            <button id="rollButton">let's roll!</button>
+            <button id="freezeButton">freeze score</button>
+        <br>
+        <h3 id="diceScore">dice shows: (1-6)</h3>
+        <div>
+        <h3 id="turnScore">your score this turn: 0</h3>
+        <h3 id="rollCount">In ... rolls</h3>
+        </div>
+        <h3 id="totalScore">your total score is: ...</h3>
+        <h3 id="roundsPlayed">you played ... rounds</h3>
+        <h3 id="youWon" class="youwon">you won in ... turns</h3>
+    </div>
+
+    
+    <br>
+    <button id="resetButton">Reset Game</button>
+</body>
+
+</html>
